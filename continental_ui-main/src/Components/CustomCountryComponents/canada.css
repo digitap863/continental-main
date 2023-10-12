@@ -1,0 +1,653 @@
+.studyin-wrapper {
+    position: relative;
+}
+
+.studyin-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/Canada/Frame\ 59.png) center/cover no-repeat;
+    opacity: 0.8; /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+
+
+
+.studyin-wrapper{
+    background: none; /* Remove the original background property */
+    height: au;
+    padding: 0 5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    font-family: Montserrat;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.studyin-wrapper .line{
+    border: 1.8px dashed rgb(255, 226, 226);
+    width: 100%;
+    margin: 10px 0; 
+}
+
+.studyin-wrapper h1{
+    color: #F74749;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.studyin-wrapper h5{
+    width: 50%;
+    margin: 1.1rem 0;
+    text-align: center;
+    font-weight: 400;
+    color: #1A093F;
+    font-size: 1.5rem;
+}
+.studyin-wrapper h2{
+    /* -webkit-text-stroke: 4px rgb(255, 0, 0);
+text-stroke: 4px rgb(255, 255, 255);
+color: white; */
+color: white;
+text-shadow:
+    1.8px 1.8px 0 #ff0000,
+  -1.8px -1.8px 0 #ff0000,  
+   1.8px -1.8px 0 #ff0000,
+   -1.8px 1.8px 0 #ff0000,
+    1.8px 1.8px 0 #ff0000;
+   font-size: 50px;
+font-size: 4rem;
+}
+
+.study-in-grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    /* gap: 10px; Gap between grid items */
+    column-gap: 3rem;
+    row-gap: 3rem;
+
+}
+.study-in-grid .grid-item{
+    border: 1px solid rgba(254, 0, 0, 0.278);
+    border-radius:20px ;
+    padding: 1rem 1rem;
+    background-color: white;
+    /* background: linear-gradient(180deg, rgba(46, 46, 46, 0.00) 0%, rgba(255, 255, 255, 0.00) 0.01%, #CBE2EB 100%); */
+    transition: transform 0.2s, box-shadow 0.2s; /* Adding transitions */
+}
+.study-in-grid .grid-item:hover {
+    transform: translateY(-10px); /* Lift up effect */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow */
+}
+
+.study-in-grid .grid-item img{
+    width: 4.5rem;
+    margin-left: 0.56rem;
+}
+
+.study-in-grid .grid-item h3{
+    margin: 0.5rem 0;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.study-in-grid .grid-item p{
+    line-height: 1.5rem;
+    font-size: small;
+    font-family: Montserrat;
+}
+
+
+.insight-wrapper {
+    position: relative;
+}
+
+.insight-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/Canada/canadabg.png) center/cover no-repeat;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+
+
+
+.insight-wrapper{
+    background: none; /* Remove the original background property */
+    height: au;
+    padding: 0 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    font-family: Montserrat;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.insight-wrapper h1{
+    color: #F74749;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.insight-wrapper p{
+    margin: 1.5rem 0;
+    line-height: 1.9rem;
+    font-size: medium;
+    text-align: justify;
+    width: 60%;
+    font-family: Montserrat;
+}
+
+
+.courses-wrapper {
+    position: relative;
+}
+
+.courses-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/Canada/canadabg.png) center/cover no-repeat;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+
+
+
+.courses-wrapper{
+    background: none; /* Remove the original background property */
+    height: au;
+    padding: 0 5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    font-family: Montserrat;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.insight-wrapper .courses {
+text-align: center;
+}
+
+.insight-wrapper img{
+    margin-top: 2rem;
+}
+.sub-content{
+    margin-left: 5rem;
+    width: 92%;
+    display:flex ;
+    text-align: justify;
+    flex-direction: column;
+    align-items: start;
+}
+.insight-wrapper h5{
+    
+    font-weight: 700;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+    width: 95%;
+    font-size: 1.1rem;
+}
+.insight-wrapper h5 span{
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+    width: 80%;
+    font-size: 1.1rem;
+}
+.sub-content ul{
+    list-style: disc !important;
+    margin-left: 1rem;
+}
+
+.sub-content ul li{
+line-height: 1.5rem;
+list-style-type: circle;
+}
+
+.eligibility-wrapper {
+    position: relative;
+}
+
+.eligibility-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/Canada/canadabg.png) center/cover no-repeat;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+
+
+
+.eligibility-wrapper{
+    background: none; /* Remove the original background property */
+    height: au;
+    padding: 0 5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    font-family: Montserrat;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.eligibility-wrapper h1{
+    color: #F74749;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.eligibility-wrapper .criterea{
+    margin-top: 2.5rem;
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5rem;
+}
+
+.eligibility-wrapper .criterea ul{
+    list-style: disc;
+}
+.eligibility-wrapper .criterea ul li{
+    font-weight: 700;
+    line-height: 1.9rem;
+list-style-type: circle;
+}
+
+.eligibility-wrapper .subtitle {
+    margin-top: 1rem;
+    width: 60%;
+    line-height: 1.9rem;
+    font-size: 1.1rem;
+    text-align: center;
+    text-align: justify;
+}
+.eligibility-wrapper h4{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.courses-grid{
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+    /* gap: 10px; Gap between grid items */
+    column-gap: 3rem;
+    row-gap: 3rem;
+    justify-items: center;
+}
+
+
+.courses-grid .grid-item{
+    background-color: white;
+    border-radius: 3rem;
+    display: flex;
+    /* width: 9rem; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+.courses-grid .grid-item h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.faqs{
+    margin-top: 1rem;
+    background-color: white;
+    width:70%;
+    padding: 3rem 0;
+    padding-left: 4rem;
+    border-radius: 1rem;
+    
+}
+
+.faqs h5{
+    width: 100%;
+    margin: 0.5rem 0;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+}
+
+
+.faqs p{
+    width: 90%;
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+.faqs ol{
+    width: 90%;
+    margin-left: 1.3rem;
+    list-style-type: decimal;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.faqs ol li{
+    list-style-type: decimal;
+}
+
+.studyin-uk::before{
+    background: url(../../assets/uk/ukbg.png) center/cover no-repeat;
+}
+
+.studyin-uk h1{
+    color: #012169;
+}
+.studyin-uk h2{
+    text-shadow:
+    1.8px 1.8px 0 #012169,
+  -1.8px -1.8px 0 #012169,  
+   1.8px -1.8px 0 #012169,
+   -1.8px 1.8px 0 #012169,
+    1.8px 1.8px 0 #012169;
+}
+.studyin-uk .grid-item{
+    border: 1px solid #0e42bc66;
+}
+
+.insight-uk::before{
+    background: url(../../assets/uk/ukbg2.png) center/cover no-repeat;
+}
+
+.insight-uk h1{
+    color: #012169;
+}
+
+.studyin-newzealand::before{
+    background: url(../../assets/uk/newzealandbg.png) center/cover no-repeat;
+}
+
+.studyin-australia::before{
+    background: url(../../assets/uk/australiabg.png) center/cover no-repeat;
+}
+
+.studyin-usa::before{
+    background: url(../../assets/usa/usabg.png) center/cover no-repeat;
+}
+.insight-usa::before{
+    background: url(../../assets/uk/ukbg2.png) center/cover no-repeat;
+}
+.faqs ul{
+    list-style: disc;
+    margin-left: 1.3rem;
+}
+.faqs ul li{
+    line-height: 1.8rem;
+    list-style: circle;
+}
+
+.studyin-ireland::before{
+    background: url(../../assets/uk/irelandbg.png) center/cover no-repeat;
+}
+
+.studyin-schengen::before{
+    background: url(../../assets/uk/schenganbg.png) center/cover no-repeat;
+}
+.studyin-ireland h1{
+    color: #B65727;
+}
+.studyin-ireland h2{
+    text-shadow:
+    1.8px 1.8px 0 #B65727,
+  -1.8px -1.8px 0 #B65727,  
+   1.8px -1.8px 0 #B65727,
+   -1.8px 1.8px 0 #B65727,
+    1.8px 1.8px 0 #B65727;
+}
+
+.insight-ireland::before{
+    background: url(../../assets/uk/ukbg2.png) center/cover no-repeat;
+}
+
+.insight-ireland h1{
+    color: #B65727;
+}
+
+.insight-wrapper .schengenlist1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    background-color: white;
+    padding: 3rem;
+    column-gap: 7rem;
+    row-gap: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+    /* grid-template-rows: repeat(2, 1fr); */
+}
+
+.insight-wrapper .schengenlist1 h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(0, 153, 255);
+}
+
+.insight-wrapper .schengenlist1 h4:hover{
+   text-decoration: underline;
+}
+
+.eligibility-wrapper .schengenlist2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    background-color: white;
+    padding: 3rem;
+    column-gap: 3.5rem;
+    row-gap: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+.eligibility-wrapper .schengenlist2 h4{
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    width:10em;
+    /* color: rgb(0, 153, 255); */
+}
+
+.eligibility-wrapper .schengenlist2 h4 span{
+    margin-right: 0.5rem;
+}
+@media(max-width:1376px){
+    .insight-wrapper img{
+        width: 70rem;
+    }
+    .insight-wrapper p{
+        width: 70%;
+    }
+
+}
+@media(max-width:1200px){
+    .insight-wrapper img{
+        width: 60rem;
+    }
+    .insight-wrapper p{
+        width: 90%;
+    }
+    .eligibility-wrapper .criterea{
+        width: 80%;
+    }
+    .eligibility-wrapper .subtitle{
+        width: 90%;
+    }
+    .courses-grid .grid-item h4{
+        font-size: 1.1rem;
+    }
+    .faqs{
+        width: 90%;
+    }
+}
+@media(max-width:992px){
+    .insight-wrapper{
+        padding: 0 3rem;
+    }
+    .insight-wrapper p{
+        width: 100%;
+    }
+    .insight-wrapper img{
+        width: 45rem;
+    }
+    .sub-content{
+        margin-left: 0;
+        width: 100%;
+    }
+    .eligibility-wrapper{
+        padding: 0 3rem;
+    }
+    .eligibility-wrapper .criterea{
+        width: 90%;
+    }
+    .eligibility-wrapper .subtitle{
+        width: 100%;
+    }
+    .courses-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .courses-grid .grid-item{
+        padding: 0.5rem;
+    }
+    .courses-grid .grid-item h4{
+        font-size: 1.1rem;
+    }
+    .faqs{
+        width: 100%;
+    }
+    .studyin-wrapper h5{
+        width: 75%;
+    }
+    .study-in-grid{
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+    .study-in-grid .grid-item h3{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:480px){
+    .studyin-wrapper{
+        padding:0 1rem;
+        padding-top: 2rem;
+    }
+    .studyin-wrapper h1{
+        font-size: 3rem;
+    }
+    .studyin-wrapper h5{
+        width: 100%;
+    }
+    .studyin-wrapper h2{
+        font-size: xxx-large;
+    }
+    .study-in-grid{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+    .study-in-grid .grid-item h3{
+        margin: 0 0;
+        font-size: 1rem;
+        width: 100%;
+    }
+    .insight-wrapper{
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+    .insight-wrapper h1{
+        font-size: 2.1rem;
+    }
+    .insight-wrapper p{
+        width: 95%;
+    }
+    .insight-wrapper img{
+        width: 23rem;
+    }
+    .sub-content{
+        margin-left: 0;
+        width: auto;
+    }
+    .eligibility-wrapper{
+        padding: 0 1rem;
+
+    }
+    .eligibility-wrapper h1{
+        font-size: 2rem;
+    }
+
+    .eligibility-wrapper .criterea{
+        width: auto;
+        padding: 1.5rem;
+    }
+    .eligibility-wrapper .subtitle{
+        width: 100%;
+    }
+    .courses-grid{
+        margin: 2rem 0;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1rem;
+    row-gap: 1rem;
+    }
+    .courses-grid .grid-item{
+        padding: 0.5rem;
+    }
+    .courses-grid .grid-item h4{
+        font-size: 1rem;
+    }
+    .faqs{
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+    .insight-wrapper .schengenlist1{
+        column-gap: 1rem;
+        padding: 1rem;
+        row-gap: 0.8rem;
+        border-radius: 1rem;
+    }
+    .insight-wrapper .schengenlist1 h4{
+        font-size: 0.9rem;
+    }
+    .eligibility-wrapper .schengenlist2{
+        column-gap: 0.1rem;
+        row-gap: 0.8rem;
+        padding: 1rem;
+    }
+    .eligibility-wrapper .schengenlist2 h4{
+        font-size: 0.75rem;
+    }
+    
+}

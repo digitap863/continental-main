@@ -1,0 +1,346 @@
+.GetInTouchForm {
+  height: 52rem;
+  width: 100%;
+  background: url(../../assets/HomePage/overseasBg.jpg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.services-contact {
+  padding: 1.5rem;
+  width: 35rem;
+  height: 30rem;
+  border-radius: 45px;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 46, 46, 0) 0%,
+    rgba(255, 255, 255, 0) 0.01%,
+    #cbe2eb 100%
+  );
+}
+
+.services-contact img {
+  width: 5rem;
+}
+
+.services-contact h4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.services-contact p{
+  color: rgba(0, 0, 0, 0.567);
+  line-height: 1.8rem;  
+}
+
+@media (max-width:992px){
+  .services-contact img {
+    width: 3rem;
+  }
+  .services-contact {
+    padding: 1.5rem;
+    width: auto ;
+    height: 100%;
+    border-radius: 20px ;
+  }
+  .services-contact p{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.567);
+    line-height: 1.5rem;  
+  }
+  .services-contact h4 {
+    font-size: 1.9rem;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width:480px){
+  .services-contact img {
+    width: 3rem;
+  }
+  .services-contact {
+    padding: 1.5rem;
+    width: auto ;
+    height: auto;
+    border-radius: 20px ;
+  }
+  .services-contact p{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.567);
+    line-height: 1.5rem;  
+  }
+  .services-contact h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+}
+
+.GetInTouchForm .GetInTouch-wrap {
+  width: 88%;
+  height: 95%;
+  margin-top: 2%;
+}
+
+.GetInTouch-wrap .getIn-text-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat;
+  gap: 0.7rem;
+}
+
+.GetInTouch-wrap .getIn-text-sec h4 {
+  color: #fb8f2a;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.GetInTouch-wrap .getIn-text-sec h1 {
+  color: #1a093f;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  text-transform: capitalize;
+}
+
+.GetInTouch-wrap .getIn-text-sec p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 40%;
+  text-align: center;
+}
+
+.GetInTouch-wrap .map-form {
+  display: flex;
+  margin-top: 2rem;
+  font-family: Montserrat;
+}
+
+.map-form .map {
+  flex: 1;
+  position: relative;
+}
+
+.map-form .map img {
+  max-width: 100%;
+  height: auto;
+}
+
+.map-form .form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.map-form .form form {
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 1.5rem;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.95rem;
+}
+
+form .form-row {
+  width: 100%;
+  display: flex;
+}
+
+.form-row input,
+textarea {
+  width: 100%;
+}
+
+/*custom input styling */
+.form-row .input-group {
+  width: 100%;
+  position: relative;
+}
+
+form .name-email-row {
+  justify-content: space-between;
+}
+
+.name-email-row .input-group {
+  width: 48%;
+}
+
+.input-group input {
+  font: inherit;
+  color: #161616;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(141, 141, 141, 0.5);
+  outline: 2px solid transparent;
+  transition: outline-color 500ms;
+  height: 3.75rem;
+}
+
+.input-group textarea {
+  height: 7rem;
+  resize: none;
+  outline: 2px solid transparent;
+  border: 1px solid rgba(141, 141, 141, 0.5);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.input-group input:is(:focus, :valid) {
+  outline-color: #3c94ffb4;
+}
+
+.input-group textarea:focus {
+  outline-color: #3c94ffb4;
+}
+
+.input-group .input-group__label {
+  color: #8d8d8d;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  translate: 10px 10px;
+  -webkit-translate: 10px 10px;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.input-group .input-group__labelMessage {
+  translate: 10px 10px;
+  -webkit-translate: 10px 10px;
+  position: absolute;
+  color: #8d8d8d;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  transition: all 500ms;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.input-group input:focus + .input-group__label,
+.input-group input:valid + .input-group__label {
+  /* padding-inline: 5px; */
+  translate: 0px -28px;
+  -webkit-translate: 0px -28px;
+  scale: 0.8;
+}
+
+.input-group textarea:focus + .input-group__labelMessage {
+  translate: 0px -21px;
+  -webkit-translate: 0px -21px;
+  scale: 0.8;
+}
+
+.input-group textarea::placeholder,
+.input-group input::placeholder {
+  color: transparent;
+}
+.getIn-btn {
+  border-radius: 24.06px;
+  background: #fb8f2a;
+  border: none;
+  color: white;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  width: 30%;
+  margin: 0 auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .GetInTouchForm .GetInTouch-wrap {
+    width: 100%;
+  }
+  .getIn-btn {
+    width: 40%;
+  }
+  /* .GetInTouchForm {
+    padding-top: 1rem;
+    height: 85rem;
+  }
+  .GetInTouch-wrap .map-form {
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  } */
+}
+@media (max-width: 480px) {
+  .GetInTouchForm {
+    padding-top: 1rem;
+    height: 69rem;
+  }
+
+  .GetInTouchForm .GetInTouch-wrap {
+    width: 98%;
+  }
+
+  .GetInTouch-wrap .getIn-text-sec h4 {
+    font-size: 0.8rem;
+  }
+  .GetInTouch-wrap .getIn-text-sec h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .GetInTouch-wrap .getIn-text-sec p {
+    max-width: 90%;
+  }
+  .GetInTouch-wrap .map-form {
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .map-form .map {
+    padding-right: 2%;
+  }
+  .map-form .form form {
+    padding: 1rem;
+    width: 98%;
+    margin-left: 1%;
+    align-items: center;
+  }
+  .name-email-row .input-group {
+    width: 100%;
+  }
+  form .name-email-row {
+    flex-direction: column;
+    gap: 1.95rem;
+  }
+
+  .getIn-btn {
+    width: 40%;
+  }
+
+  .input-group input + .input-group__label {
+    display: none;
+  }
+  .input-group input + .input-group__label {
+    display: none;
+  }
+  .input-group textarea + .input-group__labelMessage {
+    display: none;
+  }
+
+  .input-group textarea::placeholder,
+  .input-group input::placeholder {
+    color: #8d8d8d;
+    font-family: Montserrat;
+    font-size: 1rem;
+  }
+}

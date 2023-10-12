@@ -1,0 +1,244 @@
+.countryExp {
+  height: 40rem;
+  width: 100%;
+  background: url(../../assets/HomePage/overseasBg.jpg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animspr {
+  width: 36rem;
+  animation-name: spin;
+  animation-duration: 25s; /* Adjust the duration as needed */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.animic {
+  position: absolute;
+  z-index: 5;
+  width: 43rem;
+  top: 1rem;
+  right: -1rem;
+  /* animation-name: spin2; */
+  animation-name: shake; /* Using the shake animation */
+  animation-duration: 2s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Defining the shake animation */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1px);
+  }
+  50% {
+    transform: translateX(1px);
+  }
+  75% {
+    transform: translateX(-1px);
+  }
+}
+
+/* Defining the spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.countryExp .country-expWrap {
+  height: 90%;
+  width: 88%;
+  display: flex;
+  font-family: Montserrat;
+}
+
+.country-expWrap .country-image,
+.country-text-sec {
+  flex: 1;
+}
+
+.country-expWrap .country-text-sec {
+  padding-left: 3%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.country-expWrap .country-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: auto;
+}
+
+/* .country-image .countryimg {
+  height: 28rem;
+  width: 28rem;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 100%;
+  top: 3.8rem;
+  left: 10rem;
+} */
+
+.country-text-sec h3 {
+  color: #fb8f2a;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+}
+
+.country-text-sec h1 {
+  color: #1a093f;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  text-transform: capitalize;
+}
+.country-text-sec p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  max-width: 81%;
+}
+
+.country-image .countryimg {
+  justify-content: center;
+  display: flex;
+    height: 28rem;
+    width: 28rem;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 100%;
+    top: 3.8rem;
+    left: 5.9rem;
+  }
+
+
+@media (max-width: 992px) {
+  .animspr {
+    width: 22rem;
+  }
+  .animic {
+    width: 28rem;
+    top: 0rem;
+    right: 11rem;
+  }
+  .countryExp {
+    height: 50rem;
+  }
+
+  .countryExp .country-expWrap {
+    width: 95%;
+    height: 93%;
+    flex-direction: column;
+  }
+
+  .country-image .countryimg {
+    top: 1.9rem;
+    width: 18.5rem;
+    height: 18.5rem;
+    position: absolute;
+    left: 15rem;
+  }
+
+  .country-expWrap .country-text-sec {
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0rem;
+    padding-top: 0%;
+  }
+
+  .country-text-sec h3 {
+    font-size: 0.8rem;
+    line-height: 0;
+  }
+
+  .country-text-sec h1 {
+    display: none;
+  }
+  .country-text-sec h6 {
+    font-size: 1.5rem;
+    color: #1a093f;
+    font-weight: 900;
+    line-height: 3rem;
+    text-transform: capitalize;
+  }
+
+  .country-text-sec p {
+    max-width: 93%;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+}
+@media (max-width: 480px) {
+  .animspr {
+    width: 20rem;
+    height: 20rem;
+  }
+  .animic {
+    overflow-x: hidden;
+    width: 25rem;
+    top: 0;
+    right: 0rem;
+  }
+  .countryExp {
+    height: 50rem;
+  }
+
+  .countryExp .country-expWrap {
+    width: 95%;
+    height: 93%;
+    flex-direction: column;
+  }
+
+  .country-image .countryimg {
+    top: 2rem;
+    width: 16.5rem;
+    height: 16.5rem;
+    position: absolute;
+    left: 3.5rem;
+  }
+
+  .country-expWrap .country-text-sec {
+    align-items: center;
+    padding-left: 0;
+    margin-top: 0rem;
+    padding-top: 0%;
+  }
+
+  .country-text-sec h3 {
+    font-size: 0.8rem;
+    line-height: 0;
+  }
+
+  .country-text-sec h1 {
+    display: none;
+  }
+  .country-text-sec h6 {
+    font-size: 1.5rem;
+    color: #1a093f;
+    font-weight: 900;
+    line-height: 3rem;
+    text-transform: capitalize;
+  }
+
+  .country-text-sec p {
+    max-width: 93%;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+}

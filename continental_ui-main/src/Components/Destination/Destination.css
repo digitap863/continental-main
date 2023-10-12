@@ -1,0 +1,219 @@
+.destination-sec {
+  height: 39rem;
+  width: 100%;
+  background: url(../../assets/HomePage/destination_bg.jpg) center/cover
+    no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.destination-sec .desti-content,
+.slider-content {
+  margin-left: 9%;
+}
+
+.desti-content .title {
+  color: #fb8f2a;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.desti-content .heading {
+  color: #1a093f;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.3rem;
+  text-transform: capitalize;
+}
+
+.destination-sec .slider-content {
+  height: 29rem;
+  width: 91%;
+  margin-top: 3.14rem;
+  position: relative;
+}
+
+.slider-content .country-pic {
+  width: 21.3rem;
+  height: 29rem;
+  position: relative;
+}
+.country-pic .country-name {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(7.5px);
+  bottom: -0.6%;
+  border-radius: 15px;
+  height: 4rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.1rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88%;
+}
+.slider-content .dest-slider-controls,
+.migrate-btn {
+  position: absolute;
+  width: 9%;
+  top: -13.5%;
+  right: 2%;
+}
+
+.migrate-btn {
+  right: 8%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  border-radius: 24px;
+  border: none;
+  background: #fb8f2a;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+}
+
+.dest-slider-controls .swiper-button-prev,
+.swiper-button-next {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.country-pic img {
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blur_circle1 {
+  border-radius: 390.099px;
+  background: #dbe6ed;
+  filter: blur(65.14471435546875px);
+  /* top: -25%;
+  left: -6%; */
+  position: absolute;
+  z-index: -1;
+  width: 390.099px;
+  height: 390.099px;
+}
+
+@media (max-width: 1373px) {
+  .slider-content .dest-slider-controls,
+  .migrate-btn {
+    width: 10%;
+  }
+
+  .country-pic .country-name {
+    height: 3rem;
+    font-size: 1.5rem;
+    bottom: 5.6%;
+  }
+
+  .migrate-btn {
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .swiper-button-prev{
+    left: 1rem;
+  }
+  .swiper-button-next {
+    /* left:rem; */
+    right: 0;
+    width: 3rem;
+    height: 2.8rem;
+  }
+  .slider-content .dest-slider-controls,
+  .migrate-btn {
+    top: -2rem;
+    width: 16%;
+  }
+
+  .country-pic .country-name {
+    height: 3rem;
+    font-size: 1.5rem;
+    bottom: 5.6%;
+  }
+
+  .migrate-btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .destination-sec {
+    overflow: hidden;
+    padding-top: 2rem;
+    height: 25rem;
+  }
+
+  .destination-sec .desti-content {
+    margin-left: 0;
+  }
+  .destination-sec .slider-content {
+    margin-left: 2%;
+  }
+
+  .desti-content .title {
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 10px;
+  }
+
+  .desti-content .heading {
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 3.3rem;
+  }
+
+  .destination-sec .slider-content {
+    width: 140%;
+    margin-top: 0rem;
+    height: 16rem;
+  }
+
+  .slider-content .country-pic {
+    width: 8.9rem !important;
+    height: 14.8rem;
+  }
+
+  .country-pic .country-name {
+    font-size: 0.77rem;
+    height: 2rem;
+  }
+
+  .slider-content .dest-slider-controls {
+    position: absolute;
+    width: 22%;
+    transform: translate(-50%, 50%);
+    top: 108.8%;
+    right: 20%;
+  }
+
+  .slider-content .migrate-btn {
+    top: 94%;
+    right: 64%;
+    transform: translate(-50%, 50%);
+    width: 23%;
+  }
+  .slider-content .migrate-btn{
+    width: 20%;
+    font-size: .8rem;
+  }
+}

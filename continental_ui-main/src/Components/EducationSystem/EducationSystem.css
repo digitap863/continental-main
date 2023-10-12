@@ -1,0 +1,136 @@
+.education-sys {
+  height: 38rem;
+  width: 100%;
+  background: url(../../assets/HomePage/destination_bg.jpg) center/cover
+    no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-sys .education-wrap {
+  width: 88%;
+  height: 90%;
+  display: flex;
+}
+
+.education-wrap .eduSys-text,
+.eduSys-Img {
+  flex: 1;
+}
+
+.education-wrap .eduSys-text {
+  padding-left: 7%;
+}
+
+.education-wrap .eduSys-Img {
+  width: 100%;
+}
+.education-wrap .eduSys-Img img {
+  width: 100%;
+}
+
+.education-wrap .eduSys-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Montserrat;
+  gap: 1%;
+}
+
+.eduSys-text h3 {
+  color: #fb8f2a;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+}
+
+.eduSys-text h1 {
+  color: #1a093f;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  text-transform: capitalize;
+}
+
+.eduSys-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  max-width: 88%;
+}
+
+@media (max-width: 992px) {
+  .education-sys {
+    height: auto;
+  }
+  .education-sys .education-wrap {
+    width: 95%;
+  }
+
+  .education-wrap .eduSys-text h3,
+  h1,
+  p {
+    text-align: center;
+  }
+
+  .education-wrap .eduSys-text {
+    padding-left: 0%;
+    align-items: center;
+  }
+
+  .education-sys .education-wrap {
+    flex-direction: column-reverse;
+  }
+  .eduSys-text h3 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+  }
+  .eduSys-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 0.5rem;
+  }
+  .eduSys-text p {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-sys {
+    height: auto;
+  }
+  .education-sys .education-wrap {
+    width: 95%;
+  }
+
+  .education-wrap .eduSys-text h3,
+  h1,
+  p {
+    text-align: center;
+  }
+
+  .education-wrap .eduSys-text {
+    padding-left: 0%;
+    align-items: center;
+  }
+
+  .education-sys .education-wrap {
+    flex-direction: column-reverse;
+  }
+  .eduSys-text h3 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+  }
+  .eduSys-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 0.5rem;
+  }
+  .eduSys-text p {
+    margin-top: 0.5rem;
+  }
+}

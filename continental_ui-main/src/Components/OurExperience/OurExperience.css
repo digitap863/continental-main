@@ -1,0 +1,264 @@
+.perience {
+  height: 38.625rem;
+  width: 100%;
+  background: url(../../assets/HomePage/destination_bg.jpg) center/cover
+    no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-experience .exp-wrap {
+  width: 100%;
+  height: 35.625rem;
+}
+
+.exp-wrap .exp-content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+}
+
+.exp-content .img-sec {
+  position: relative;
+}
+
+.exp-content .img-sec .overSeasImg {
+  position: absolute;
+  width: 92%;
+  left: 19%;
+  bottom: 3%;
+}
+
+.exp-content .counter-sec {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  align-items: center;
+  padding-top: 5%;
+  /* margin-left: 15%; */
+  font-family: Montserrat;
+  gap: 4%;
+}
+
+.counter-sec .title {
+  color: #fb8f2a;
+  font-size: 1rem;
+  font-weight: 700;
+  /* line-height: 1.8rem; */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.counter-sec .head {
+  color: #1a093f;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+}
+
+.counter-sec .desc {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.8rem;
+  width: 60%;
+}
+
+.counter-sec .counter-part {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  align-items: center;
+  text-transform: capitalize;
+  width: 45%;
+}
+@media(max-width:480px){
+  .counter-sec .counter-part {
+
+    width: 95%;
+  }
+}
+
+.counter-sec .counter-part .admissions{
+
+}
+
+.counter-sec .counter-part h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fb8f2a;
+}
+
+.counter-part .border {
+  position: relative;
+}
+
+.counter-part .universities::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3.8rem;
+  background: #35313e;
+  top: 10%;
+  right: -40%;
+  opacity: 0.10000000149011612;
+}
+
+.counter-part .countries::before {
+  position: absolute;
+  content: "";
+  width: 3.2px;
+  height: 3.8rem;
+  background: #35313e;
+  top: 10%;
+  opacity: 0.10000000149011612;
+  right: -55%;
+}
+
+.counter-sec .head-mob {
+  display: none;
+}
+.counter-sec .mob-exp-img-sec {
+  display: none;
+}
+.university-swiper{
+  margin-top: 2rem;
+  width: 50rem;
+}
+
+.university-swiper .slider-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 6rem;
+  background-color: white;
+  object-fit: contain;
+}
+
+.university-swiper .slider-container img{
+  object-fit: contain;
+  width: 95%; /* Optionally, make sure the image takes up the full width of the container */
+  height: 95%;
+}
+@media(max-width:480px){
+  .university-swiper{
+    width: 22rem;
+  }
+  .university-swiper .slider-container{
+    width: 4.5rem;
+  height: 3rem;
+  }
+  .university-swiper .slider-container img{
+    width: 3.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .counter-sec .counter-part{
+    width: 75%;
+  }
+  .exp-content .img-sec {
+    display: none;
+  }
+  .our-experience {
+    height: 61.625rem;
+  }
+  .counter-sec .mob-exp-img-sec {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .exp-wrap .exp-content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .exp-content .img-sec {
+    display: none;
+  }
+  .our-experience {
+    height: 59rem !important;
+    margin-top: 5rem;
+    margin-bottom: -7rem;
+  }
+
+  .our-experience .exp-wrap {
+    width: 93%;
+    height: 48.625rem;
+  }
+
+  .exp-wrap .exp-content {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-content .counter-sec {
+    margin-left: 7%;
+    align-items: center;
+    gap: 1.5%;
+  }
+
+  .counter-sec .desc {
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  .counter-sec .head {
+    display: none;
+  }
+  .counter-sec .head-mob {
+    display: block;
+    color: #1a093f;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+  }
+  .counter-sec .mob-exp-img-sec {
+    display: block;
+    width: 105%;
+    margin-left: 5%;
+  }
+  .counter-sec .mob-exp-img-sec img {
+    width: 100%;
+  }
+  .counter-sec .head-mob {
+    font-size: 1.15rem;
+  }
+  .counter-sec .title {
+    font-size: 0.8rem;
+    align-self: self-start;
+  }
+
+  .counter-sec .counter-part h1 {
+    font-size: 2rem;
+  }
+
+  .counter-sec .counter-part p {
+    font-size: 0.8rem;
+  }
+  .counter-part .countries::before {
+    top: 2%;
+    right: -37%;
+    height: 3rem;
+  }
+
+  .counter-part .universities::before {
+    top: 2%;
+    right: -27%;
+    height: 3rem;
+  }
+}

@@ -1,0 +1,231 @@
+.DreamDestiGrid {
+ height: 124rem;
+  width: 100%;
+  background: url(../../assets/HomePage/Frame\ 40.png) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SchengenGrid {
+  height: 175rem;
+   width: 100%;
+   background: url(../../assets/HomePage/Frame\ 40.png) center/cover no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+.DreamDestiGrid .dream-dest-wrap {
+  height: 95%;
+  width: 88%;
+  font-family: Montserrat;
+  position: relative;
+}
+
+.dream-dest-wrap .orange-btn {
+  border-radius: 24.06px;
+  background: #fb8f2a;
+  border: none;
+  color: white;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  position: absolute;
+  bottom: -0.5%;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+.dream-dest-wrap h4 {
+  color: #fb8f2a;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.dream-dest-wrap p{
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px;
+  /* max-width: 40%; */
+  font-family: Montserrat;
+  /* text-align: cen??er; */
+}
+
+.dream-dest-wrap h1 {
+  color: #1a093f;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.dream-dest-wrap .desti-grid {
+  width: 93%;
+  margin: 4% auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4%;
+  row-gap: 5%;
+}
+
+.dream-dest-wrap .schenegen-grid {
+  width: 93%;
+  margin: 4% auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2%;
+  row-gap: 3%;
+}
+
+.desti-grid .destImages {
+  position: relative;
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.destImages .country-name {
+  position: absolute;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
+  bottom: -0.6%;
+  border-radius: 15px;
+  height: 4rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  left: 55%;
+  bottom: 3%;
+  transform: translate(-50%, 0);
+  padding: 0.1rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88%;
+}
+
+.destImages img {
+  object-fit: cover;
+  border-radius: 30px;
+  max-width: 23rem;
+  height: 32rem;
+}
+
+.SchengenGrid .schengenImages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.schengenImages img {
+  object-fit: cover;
+  border-radius: 20px;
+  max-width: 20rem;
+  height: 28rem;
+}
+
+.schengenImages .schengencountry-name h3{
+  font-size: 1.8rem;
+}
+
+.schengenImages .schengencountry-name {
+  position: absolute;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
+  bottom: -0.6%;
+  border-radius: 15px;
+  height: 4rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, 0);
+  padding: 0.1rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 83%;
+}
+
+@media (max-width: 1373px) {
+  .destImages .country-name {
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:992px){
+  .DreamDestiGrid .dream-dest-wrap{
+    width: 95%;
+  }
+  .DreamDestiGrid{
+    height: 74rem;
+  }
+  .SchengenGrid{
+    height: 122rem;
+  }
+  .destImages img {
+    max-width: 100%;
+    border-radius: 20px;
+    height: auto;
+}
+.destImages .country-name{
+  font-size: 1rem;
+  bottom: 3%;
+}
+.dream-dest-wrap .desti-grid{
+  row-gap: 5%;
+}
+}
+
+@media (max-width: 480px) {
+  .schengenImages .schengencountry-name h3{
+    font-size: 1.2rem;
+  }
+  .DreamDestiGrid .dream-dest-wrap {
+    width: 95%;
+  }
+  .dream-dest-wrap h4 {
+    font-size: 0.8rem;
+    line-height: 0.2rem;
+  }
+  .dream-dest-wrap h1 {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+
+  .dream-dest-wrap .desti-grid {
+    width: 97%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 5%;
+    row-gap: 3.5%;
+  }
+
+  .destImages .country-name {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .DreamDestiGrid {
+    height: 70rem;
+  }
+  .SchengenGrid{
+    height: 125rem;
+  }
+}

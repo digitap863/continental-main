@@ -1,0 +1,342 @@
+.services-swiper {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  position: relative;
+}
+
+
+
+.services-swiper .servicesSlider-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.servicesSlider-wrap .services-head-part {  
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Montserrat;
+}
+
+.services-head-part .title {
+  color: #fb8f2a;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 5px 11px rgba(0, 0, 0, 0.31);
+}
+
+.services-head-part .head {
+  /* margin-top: 2rem; */
+  color: #1a093f;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+  text-shadow: 2px 5px 11px rgba(0, 0, 0, 0.31);
+}
+
+.services-head-part .desc {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .services-head-part .desc {
+    width: 90%;
+  }
+}
+.servicesSlider-wrap .services-slider-part {
+  margin-top: auto;
+  height: 22.5rem;
+  display: flex;
+}
+
+.services-slider-part .services-us-slid{
+  width: 95%;
+  padding: 0 1% 1% 1%;
+}
+
+.services-slider-part .slider-con {
+  width: 21.8rem;
+  font-family: Montserrat;
+  border-radius: 45px;
+  background: linear-gradient(
+    180deg,
+    #d4d4d4 0%,
+    rgba(255, 255, 255, 0) 0.01%,
+    #cbe2eb 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 4%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2),
+    /* Bottom shadow */ 0 5px 5px -3px rgba(0, 0, 0, 0.3),
+    /* Bottom-left shadow */ 0 5px 5px -3px rgba(0, 0, 0, 0.3); /* Bottom-right shadow */
+}
+
+.services-slider-part div h3 {
+  font-size: 1.28rem;
+  color: #1a093f;
+  /* width: 100%; */
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.services-slider-part div p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #8c849f;
+  width: 90%;
+  position: relative; /* Add this */
+  overflow: hidden; /* Add this */
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.services-slider-part div p::before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent, white);
+  padding: 0 0.5rem; /* Adjust as needed */
+}
+
+.services-slider-part div img {
+  width: 9.25rem;
+  height: 9.25rem;
+  margin-bottom: 1%;
+}
+
+.servicesSlider-wrap .choose-slid-ctrls {
+  position: absolute;
+  width: 9%;
+  bottom: -16.5%;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose-slid-ctrls .choose-button-prev1,
+.choose-button-next1 {
+  width: 2.8rem !important;
+  height: 2.8rem;
+  cursor: pointer;
+}
+.services-swiper .services-slider-button{
+  border-radius: 2rem;
+  padding: 0.9rem 1.5rem;
+  background-color: #fb8f2a;
+  border: 0;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.services-slider-controls{
+  position: absolute;
+  bottom: -5rem;
+  /* right: 50; */
+  left: 45rem
+  ;
+  z-index: 10;
+}
+.services-slider-controls .services-button-next1,.services-slider-controls .services-button-prev1{
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.services-slider-controls .services-button-next2,.services-slider-controls .services-button-prev2{
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+
+.raised {
+  transform: translateY(-20px); /* Adjust the amount to raise the center slide */
+  transition: transform 0.3s;
+}
+@media (max-width: 1373px) {
+  .services-swiper .servicesSlider-wrap {
+    width: 90%;
+  }
+
+  .services-slider-part .slider-con {
+    gap: 5%;
+  }
+
+  .services-slider-part div h3 {
+    font-size: 1.1rem;
+  }
+
+  .services-slider-part div p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .services-slider-part div img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .servicesSlider-wrap .choose-slid-ctrls {
+    width: 11%;
+  }
+}
+
+
+
+@media(max-width:1376px){
+  .services-slider-controls{
+    position: absolute;
+    bottom: -5rem;
+    /* right: 50; */
+    left: 35rem
+    ;
+    z-index: 10;
+  }
+  .servicesSlider-wrap .services-slider-part{
+    height: 19rem;
+  }
+ 
+  .services-swiper{
+    height: 25rem;
+  }
+}
+
+@media(max-width:1200px){
+.services-slider-controls{
+  position: absolute;
+  bottom: -5rem;
+  /* right: 50; */
+  left: 30rem;
+  z-index: 10;
+}
+}
+@media (max-width: 992px) {
+  .servicesSlider-wrap .services-slider-part {
+    height: 18.5rem;
+  }
+  .services-swiper {
+    height: 34rem;
+  }
+  .services-swiper .servicesSlider-wrap {
+    height: 25.5rem;
+  }
+  .mission .mission-wrap {
+    width: 95% !important;
+  }
+  .text-sec p {
+    font-size: 0.85rem !important;
+    width: 95% !important;
+  }
+  .vision .vision-wrap {
+    width: 100% !important;
+  }
+  .services-slider-controls{
+    position: absolute;
+    bottom: -5rem;
+    /* right: 50; */
+    left: 20rem
+    ;
+    z-index: 10;
+  }
+}
+
+
+
+  @media (max-width: 480px) {
+    .services-head-part .desc {
+      width: 100%;
+    }
+    .vision .vision-wrap {
+      width: 88% !important;
+    }
+    .services-swiper {
+      height: 30rem;
+    }
+  
+    .services-swiper .servicesSlider-wrap {
+      width: 95%;
+      height: 25rem;
+    }
+  
+    .servicesSlider-wrap .services-slider-part {
+      height: 13.5rem;
+    }
+  
+    .services-head-part .title {
+      line-height: 1.5rem;
+    }
+  
+    .services-head-part .head {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+  
+    .services-slider-part .services-us-slid{
+      width: 97%;
+      padding: 0 0.5% 0.5% 0.5%;
+    }
+  
+    .services-slider-part div img {
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    .services-slider-part div h3 {
+      font-size: 0.7rem;
+    }
+  
+    .services-slider-part div p {
+      width: 97%;
+      line-height: 1.1rem;
+      font-size: 0.8rem;
+    }
+  
+    .services-slider-part .slider-con {
+      margin-bottom: 1rem;
+      gap: 2%;
+      padding: 0.7rem;
+    }
+  
+    .servicesSlider-wrap .choose-slid-ctrls {
+      width: 28%;
+      bottom: -14.5%;
+      right: 5%;
+    }
+    .services-swiper{
+      height: 18rem;
+  }
+  .servicesSlider-wrap .services-slider-part{
+      height: 17rem;
+  }
+  .services-swiper .services-slider-button{
+      padding:0.8rem 0.9rem;
+      font-size: 0.7rem;
+  }
+  .services-slider-controls{
+      display: none;
+  }
+  }

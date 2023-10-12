@@ -1,0 +1,78 @@
+.AccordionGuidlines {
+  padding-top: 2rem;
+  height: 100%;
+  width: 100%;
+  background: url(../../assets/HomePage/footer_bg.jpg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AccordionGuidlines .accord-guid-wrap {
+  display: flex;
+  width: 88%;
+  height: 88%;
+  font-family: Montserrat;
+}
+
+.accord-guid-wrap .accordion-g,
+.acco-image {
+  flex: 1;
+}
+
+.accord-guid-wrap .acco-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.accord-guid-wrap .accordion-g {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion-g h1 {
+  font-size: 34.37px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.accordion-g .acco-para {
+  color: #35313e;
+  line-height: 1.8rem;
+}
+
+.accordion-g .acco-headi {
+  color: #000;
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .AccordionGuidlines {
+    height: 100%;
+  }
+
+  .AccordionGuidlines .accord-guid-wrap {
+    width: 95%;
+    height: 93%;
+  }
+
+  .accord-guid-wrap .acco-image {
+    display: none;
+  }
+  .accordion-g h1 {
+    font-size: 1.3rem;
+  }
+  .accordion__button {
+    height: 1.65rem;
+  }
+  .accordion-g .acco-headi {
+    font-size: 0.9rem;
+  }
+
+  .accordion-g .acco-para {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}

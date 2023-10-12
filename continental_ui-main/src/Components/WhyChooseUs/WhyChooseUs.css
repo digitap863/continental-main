@@ -1,0 +1,269 @@
+.WhyChooseUs {
+  height: 38rem;
+  width: 100%;
+  background: url(../../assets/HomePage/why_choose.jpg) center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.WhyChooseUs::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: url("../../assets/HomePage/navbar_line.png");
+  background-size: contain;
+  width: 100%;
+  height: 2px;
+  opacity: 0.6;
+}
+
+.WhyChooseUs .WhyChooseUs-wrap {
+  height: 32.5rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.WhyChooseUs-wrap .head-part {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Montserrat;
+}
+
+.head-part .title {
+  color: #fb8f2a;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 5px 11px rgba(0, 0, 0, 0.31);
+}
+
+.head-part .head {
+  /* margin-top: 2rem; */
+  color: #1a093f;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+  text-shadow: 2px 5px 11px rgba(0, 0, 0, 0.31);
+}
+
+.head-part .desc {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  width: 50%;
+  text-align: center;
+}
+
+@media(max-width:992px){
+  .head-part .desc{
+    width: 90%;
+  }
+}
+.WhyChooseUs-wrap .slider-part {
+  margin-top: auto;
+  height: 16rem;
+  display: flex;
+}
+
+.slider-part .choose-us-slid {
+  width: 95%;
+  padding: 0 1% 1% 1%;
+}
+
+.slider-part .slider-con {
+  width: 21.8rem;
+  font-family: Montserrat;
+  border-radius: 45px;
+  background: linear-gradient(
+    180deg,
+    #d4d4d4 0%,
+    rgba(255, 255, 255, 0) 0.01%,
+    #cbe2eb 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 4%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2),
+    /* Bottom shadow */ 0 5px 5px -3px rgba(0, 0, 0, 0.3),
+    /* Bottom-left shadow */ 0 5px 5px -3px rgba(0, 0, 0, 0.3); /* Bottom-right shadow */
+}
+
+.slider-part div h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: #1a093f;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.slider-part div p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #8c849f;
+  width: 90%;
+  position: relative; /* Add this */
+  overflow: hidden; /* Add this */
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.slider-part div p::before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent, white);
+  padding: 0 0.5rem; /* Adjust as needed */
+}
+
+
+.slider-part div img {
+  width: 9.25rem;
+  height: 9.25rem;
+  margin-bottom: 1%;
+}
+
+.WhyChooseUs-wrap .choose-slid-ctrls {
+  position: absolute;
+  width: 9%;
+  bottom: -16.5%;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose-slid-ctrls .choose-button-prev1,
+.choose-button-next1 {
+  width: 2.8rem !important;
+  height: 2.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1373px) {
+  .WhyChooseUs .WhyChooseUs-wrap {
+    width: 90%;
+  }
+
+  .slider-part .slider-con {
+    gap: 5%;
+  }
+
+  .slider-part div h3 {
+    font-size: 1.1rem;
+  }
+
+  .slider-part div p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .slider-part div img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .WhyChooseUs-wrap .choose-slid-ctrls {
+    width: 11%;
+  }
+}
+@media (max-width:992px) {
+  .mission .mission-wrap{
+    width: 95% !important;
+  }
+  .text-sec p{
+    font-size: 0.85rem !important;
+    width: 95% !important;
+  }
+  .vision .vision-wrap{
+    width: 100% !important;
+  }
+}
+
+
+
+@media(max-width:992px){
+  .WhyChooseUs-wrap .slider-part{
+    height: 15.5rem;
+  }
+  .WhyChooseUs{
+    height: 34rem;
+  }
+  .WhyChooseUs .WhyChooseUs-wrap{
+    height: 25.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .head-part .desc{
+    width: 100%;
+  }
+  .vision .vision-wrap{
+    width: 88% !important;
+  }
+  .WhyChooseUs {
+    height: 30rem;
+  }
+
+  .WhyChooseUs .WhyChooseUs-wrap {
+    width: 95%;
+    height: 23rem;
+  }
+
+  .WhyChooseUs-wrap .slider-part {
+    height: 13.5rem;
+  }
+
+  .head-part .title {
+    line-height: 1.5rem;
+  }
+
+  .head-part .head {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .slider-part .choose-us-slid {
+    width: 97%;
+    padding: 0 0.5% 0.5% 0.5%;
+  }
+
+  .slider-part div img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .slider-part div h3 {
+    font-size: 0.9rem;
+  }
+
+  .slider-part div p {
+    width: 97%;
+    line-height: 1.1rem;
+    font-size: 0.8rem;
+  }
+
+  .slider-part .slider-con {
+    margin-bottom: 1rem;
+    gap: 2%;
+    padding: 0.7rem;
+  }
+
+  .WhyChooseUs-wrap .choose-slid-ctrls {
+    width: 28%;
+    bottom: -20.5%;
+    right: 5%;
+  }
+}

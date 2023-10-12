@@ -1,0 +1,182 @@
+.about_head_wrap {
+  padding-top: 1px;
+  width: 100%;
+  height: 55rem;
+  position: relative;
+  background: url(../../assets/HomePage/Frame\ 40.png) center/cover no-repeat;
+  overflow: hidden;
+}
+/* @media (max-width: 1373px) {
+  .about_hero_section .about_search{
+    width: 30rem;
+  }
+} */
+@media (max-width: 992px){
+  .about_hero_section .aboutMainImage{
+    left: 25.5% !important;
+  }
+  .aboutMainImage .course_panel{
+    left: 43.5% !important;
+  }
+  .about_hero_section .about_search_curv{
+    height: 4rem;
+  }
+  .about_hero_section .about_search{
+    width: 25rem !important;
+  }
+}
+.about_head_wrap{
+  height: 61rem;
+}
+.about_hero_section {
+  height: 30.7rem;
+}
+
+.about_hero_section .about_search {
+  width: 20.8rem;
+  font-family: Montserrat;
+  position: absolute;
+  top: 43%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.about_hero_section .bgCircle {
+  position: absolute;
+  right: 5%;
+  bottom: -13%;
+  width: 40%;
+}
+
+.about_hero_section .aboutMainImage {
+  position: absolute;
+  top: 50%;
+  width: 68%;
+  left: 55.5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.aboutMainImage .cloud {
+  position: absolute;
+  bottom: -7%;
+  left: -10%;
+}
+.aboutMainImage .course_panel {
+  position: absolute;
+  transform: translate(0%, -50%);
+  bottom: -21%;
+  left: -7.5%;
+}
+
+.about_hero_section .launchRocket {
+  position: absolute;
+  right: 83%;
+  top: 10%;
+  width: 3.5rem;
+}
+
+.about_hero_section .launchRocket {
+  position: absolute;
+  right: 80%;
+  top: 0%;
+  width: 3.5rem;
+}
+.about_hero_section .smallLaunchRocket {
+  position: absolute;
+  right: 5%;
+  top: 55%;
+  width: 1.8rem;
+}
+
+.about_hero_section .book {
+  position: absolute;
+  right: 1%;
+  width: 7rem;
+  bottom: 8%;
+}
+
+.about_hero_section .bookShelf {
+  position: absolute;
+  right: 68%;
+  top: 18%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #6347eb;
+  opacity: 0.7;
+}
+
+.about_search .abroad_title {
+  margin-bottom: 0.5rem;
+}
+
+.about_hero_section .about_search_curv {
+  height: 4.8rem;
+  border-radius: 75px;
+  background: #fff;
+  box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+.about_search_curv h3 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.about_search_curv .search_part {
+  margin-left: auto;
+  width: 3.6rem;
+  height: 3.6rem;
+  border: none;
+  background: transparent;
+}
+@media (max-width: 480px) {
+  .about_head_wrap {
+    height: 58rem;
+  }
+
+  .about_hero_section .aboutMainImage {
+    left: 25.5%;
+    top: 80%;
+    width: 40rem;
+  }
+
+  .about_hero_section .aboutMainImage .about-main {
+    width: 100%;
+  }
+
+  .about_hero_section .bgCircle {
+    width: 22rem;
+    bottom: -9%;
+    right: -12%;
+  }
+  .about_hero_section .bgCircle .bg-circle {
+    width: 100%;
+  }
+
+  .about_hero_section .about_search {
+    top: 18%;
+    width: 97% !important;
+    left: 52%;
+  }
+  .about_hero_section .about_search_curv {
+    height: 4.3rem;
+    padding: 0 1rem 0 2rem;
+  }
+
+  .about_search_curv h3 {
+    font-size: 2rem;
+  }
+
+  .aboutMainImage .course_panel {
+    transform: translate(-50%, -50%);
+    bottom: -27%;
+    left: 63% !important;
+  }
+}
