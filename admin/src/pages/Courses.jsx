@@ -133,7 +133,7 @@ function Courses() {
                                 </span>
                                 {hoveredElement === index && (
                                     <div
-                                        className='absolute bg-blue-200 py-5 px-2 rounded-lg right-[5%] top-[18%] z-50 transition delay-300 ease-in-out flex gap-5'
+                                        className='absolute bg-blue-200 py-5 px-2 rounded-lg right-[2%] top-[18%] z-50 transition delay-300 ease-in-out flex gap-5'
                                     >
                                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                                             <h5 className='text-xl font-bold'>Countries :</h5>
